@@ -15,16 +15,16 @@ int main(){
         case '1':
             y = (rand() % 3);
             x = x | y;
-            printf("Armario ocupado:%c\n",x);
+            printf("Armario ocupado:%#x\n",x);
             break;
         case '2':
             getchar();
             puts("posicao que vai ocupar:");
             scanf("%c",&posicao);
             x = x & posicao;
-            printf("Armario desocupado:%c\n",x);
+            printf("Armario desocupado:%#x\n",x);
             x = posicao;
-            printf("Armario ocupado:%c\n",x);
+            printf("Armario ocupado:%#x\n",x);
             break;
         }
     }
