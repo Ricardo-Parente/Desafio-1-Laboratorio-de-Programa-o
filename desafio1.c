@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(){
-    char posicao,y,i,x = '0';
+    unsigned char posicao,i,x = '0';
     puts("1. Ocupar armario");
     puts("2. Desocupar armario");
     puts("3. Sair");
@@ -19,7 +19,7 @@ int main(){
         case '2':
             getchar();
             puts("posicao que vai ocupar:");
-            scanf("%c",&posicao);
+            scanf("%hhu",&posicao);
             x = x ^ (0x01 << posicao);
             printf("Armario desocupado:%#x\n",x);
             break;
