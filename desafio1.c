@@ -20,10 +20,8 @@ int main(){
             getchar();
             puts("posicao que vai ocupar:");
             scanf("%c",&posicao);
-            x = x & posicao;
+            x = x ^ (0x01 << posicao);
             printf("Armario desocupado:%#x\n",x);
-            x = posicao;
-            printf("Armario ocupado:%#x\n",x);
             break;
         }
     }
