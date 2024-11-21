@@ -13,7 +13,7 @@ int main(){
         switch (i)
         {
         case '1':
-            x = (x | 0x01) << (rand() % 8);
+            x = x | (0x01 << (rand() % 8));
             printf("Armario ocupado:%#x\n",x);
             break;
         case '2':
