@@ -20,11 +20,13 @@ int main(){
             getchar();
             puts("posicao que vai ocupar:");
             scanf("%hhu",&posicao);
+            if (posicao >= 0 && posicao <= 8)
+            {
             x = x ^ (0x01 << posicao);
             printf("Armario desocupado:%#x\n",x);
             break;
+            }
         }
     }
     puts("Programa finalizado.");
-    
 }
